@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Reserve a Room">a36b9bd847e021107698016a436d43c5</sc_cat_item>
+        <sc_category display_value="Departmental Services">95fc11615f1211001c9b2572f2b477c6</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 19:17:34</sys_created_on>
+        <sys_id>504c1f1c47e021107698016a436d43c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Departmental Services.Reserve a Room</sys_name>
+        <sys_package display_value="Room Reservation System" source="x_961043_room_re_0">7a3b6a1c472021107698016a436d430f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_update_name>sc_cat_item_category_504c1f1c47e021107698016a436d43c5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 19:17:34</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</application>
+        <file_path/>
+        <instance_id>638d6ed4dba71784cbf6d5b0cf961905</instance_id>
+        <instance_name>dev66698</instance_name>
+        <name>sc_cat_item_category_504c1f1c47e021107698016a436d43c5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Reserve a Room">a36b9bd847e021107698016a436d43c5</sc_cat_item><sc_category display_value="Departmental Services">95fc11615f1211001c9b2572f2b477c6</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-01-18 19:17:34</sys_created_on><sys_id>504c1f1c47e021107698016a436d43c5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Departmental Services.Reserve a Room</sys_name><sys_package display_value="Room Reservation System" source="x_961043_room_re_0">7a3b6a1c472021107698016a436d430f</sys_package><sys_policy/><sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope><sys_update_name>sc_cat_item_category_504c1f1c47e021107698016a436d43c5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-01-18 19:17:34</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>1138560321</payload_hash>
+        <record_name>Departmental Services.Reserve a Room</record_name>
+        <reverted_from/>
+        <source>3e3b6a1c472021107698016a436d4311</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 19:17:34</sys_created_on>
+        <sys_id>d44c1f1c47e021107698016a436d43c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>185c650adf90000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 19:17:34</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>5c4c1f1c34e0211036f1a00feadf64c8</update_guid>
+        <update_guid_history>5c4c1f1c34e0211036f1a00feadf64c8:1138560321</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Departmental Services.Reserve a Room">aebc975c47e021107698016a436d43d1</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 19:19:38</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>00b5ac2c702f42ae800294fb59cbc249</sys_id>
+        <sys_metadata>504c1f1c47e021107698016a436d43c5</sys_metadata>
+        <sys_name>Departmental Services.Reserve a Room</sys_name>
+        <sys_package display_value="Room Reservation System" source="x_961043_room_re_0">7a3b6a1c472021107698016a436d430f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_scope_delete display_value="">470ecf0ec82e4e40a1f0ebb2365aa400</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_504c1f1c47e021107698016a436d43c5</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_504c1f1c47e021107698016a436d43c5">d44c1f1c47e021107698016a436d43c9</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

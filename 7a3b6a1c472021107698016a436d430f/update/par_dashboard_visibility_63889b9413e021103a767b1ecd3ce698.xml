@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_visibility">
+    <par_dashboard_visibility action="INSERT_OR_UPDATE">
+        <dashboard display_value="Room Reservation System">ab889b94b7e02110f293169891a4f293</dashboard>
+        <experience display_value="Room Reservation System">af889b9430e02110266894c5d23f0693</experience>
+        <sys_class_name>par_dashboard_visibility</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 19:01:24</sys_created_on>
+        <sys_id>63889b9413e021103a767b1ecd3ce698</sys_id>
+        <sys_name/>
+        <sys_package display_value="Room Reservation System" source="x_961043_room_re_0">7a3b6a1c472021107698016a436d430f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_update_name>par_dashboard_visibility_63889b9413e021103a767b1ecd3ce698</sys_update_name>
+    </par_dashboard_visibility>
+</record_update>

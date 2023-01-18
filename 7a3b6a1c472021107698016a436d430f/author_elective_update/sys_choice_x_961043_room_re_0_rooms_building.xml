@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="building" table="x_961043_room_re_0_rooms" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>building</element>
+            <name>x_961043_room_re_0_rooms</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-18 15:58:43</sys_created_on>
+            <sys_name>building</sys_name>
+            <sys_package display_value="Room Reservation System" source="x_961043_room_re_0">7a3b6a1c472021107698016a436d430f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+            <sys_update_name>sys_choice_x_961043_room_re_0_rooms_building</sys_update_name>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>building</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Building 30</label>
+            <language>en</language>
+            <name>x_961043_room_re_0_rooms</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-18 15:58:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>building_30</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>building</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Building H</label>
+            <language>en</language>
+            <name>x_961043_room_re_0_rooms</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-18 15:58:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>building_h</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

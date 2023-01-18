@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <name>routeConfigId</name>
+        <page display_value="Room Reservation System">af889b9430e02110266894c5d23f0693</page>
+        <required_translations>[]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 19:01:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>e7889b9466e02110a2a110930e6d0099</sys_id>
+        <sys_name>routeConfigId</sys_name>
+        <sys_package display_value="Room Reservation System" source="x_961043_room_re_0">7a3b6a1c472021107698016a436d430f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_update_name>sys_ux_page_property_e7889b9466e02110a2a110930e6d0099</sys_update_name>
+        <type>string</type>
+        <unique_name>x_961043_room_re_0.af889b9430e02110266894c5d23f0693.root.routeConfigId</unique_name>
+        <value>76a302f10b131010a8b1c96237673a61</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=e7889b9466e02110a2a110930e6d0099"/>
+</record_update>

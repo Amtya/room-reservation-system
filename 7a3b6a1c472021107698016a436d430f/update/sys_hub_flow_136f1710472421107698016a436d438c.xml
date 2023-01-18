@@ -1,0 +1,2065 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name>FlowTemplate_Empty</copied_from_name>
+        <description/>
+        <internal_name>room_reservation_approval</internal_name>
+        <label_cache>[{"name":"878ae4eb-8020-42f5-ba47-9e91acd3cc75.record","label":"1 - Update Record➛Room Reservation Request Record","reference":"x_961043_room_re_0_room_reservation_request","reference_display":"Room Reservation Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"878ae4eb-8020-42f5-ba47-9e91acd3cc75.table_name","label":"1 - Update Record➛Room Reservation Request Table","reference":"x_961043_room_re_0_room_reservation_request","reference_display":"Room Reservation Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"878ae4eb-8020-42f5-ba47-9e91acd3cc75.__action_status__","label":"1 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"878ae4eb-8020-42f5-ba47-9e91acd3cc75.__dont_treat_as_error__","label":"1 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Room Reservation Request Record","reference":"x_961043_room_re_0_room_reservation_request","reference_display":"Room Reservation Request","type":"reference","base_type":"reference","attributes":{}},{"name":"89df32de-8b1b-44f8-b108-1d30ebd6b5ea.approval_state","label":"2 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"89df32de-8b1b-44f8-b108-1d30ebd6b5ea.__action_status__","label":"2 - Ask For Approval➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"89df32de-8b1b-44f8-b108-1d30ebd6b5ea.__dont_treat_as_error__","label":"2 - Ask For Approval➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"Created_1.current.room_requested.owner","label":"Trigger - Record Created➛Room Reservation Request Record➛Room requested➛Owner","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_961043_room_re_0_rooms","column_name":"owner"},{"name":"e4414c5a-729a-4dee-8041-acc01be2af01.record","label":"4 - Update Record➛Room Reservation Request Record","reference":"x_961043_room_re_0_room_reservation_request","reference_display":"Room Reservation Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e4414c5a-729a-4dee-8041-acc01be2af01.table_name","label":"4 - Update Record➛Room Reservation Request Table","reference":"x_961043_room_re_0_room_reservation_request","reference_display":"Room Reservation Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e4414c5a-729a-4dee-8041-acc01be2af01.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"e4414c5a-729a-4dee-8041-acc01be2af01.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"a9d2ee6d-f96d-489d-8a9e-460bcc72db4d.email","label":"5 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a9d2ee6d-f96d-489d-8a9e-460bcc72db4d.__action_status__","label":"5 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"a9d2ee6d-f96d-489d-8a9e-460bcc72db4d.__dont_treat_as_error__","label":"5 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"878ae4eb-8020-42f5-ba47-9e91acd3cc75.record.opened_by.email","label":"1 - Update Record➛Room Reservation Request Record➛Opened by➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"878ae4eb-8020-42f5-ba47-9e91acd3cc75.record.opened_by.first_name","label":"1 - Update Record➛Room Reservation Request Record➛Opened by➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"e4414c5a-729a-4dee-8041-acc01be2af01.record.room_requested.room_number","label":"4 - Update Record➛Room Reservation Request Record➛Room requested➛Room Number","reference":"","reference_display":"Room Number","type":"string","base_type":"string","parent_table_name":"x_961043_room_re_0_rooms","column_name":"room_number"},{"name":"Created_1.current.opened_by.first_name","label":"Trigger - Record Created➛Room Reservation Request Record➛Opened by➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"Created_1.current.room_requested.room_number","label":"Trigger - Record Created➛Room Reservation Request Record➛Room requested➛Room Number","reference":"","reference_display":"Room Number","type":"string","base_type":"string","parent_table_name":"x_961043_room_re_0_rooms","column_name":"room_number"},{"name":"Created_1.current.room_requested.campus","label":"Trigger - Record Created➛Room Reservation Request Record➛Room requested➛Campus","reference":"","reference_display":"Campus","type":"choice","base_type":"choice","parent_table_name":"x_961043_room_re_0_rooms","column_name":"campus","choices":[{"label":"CAC","used":false,"image":"","rawLabel":"CAC","selected":false,"missing":false,"reference":false,"value":"cac","parameters":{"name":"x_961043_room_re_0_rooms"}},{"label":"WHQ","used":false,"image":"","rawLabel":"WHQ","selected":false,"missing":false,"reference":false,"value":"whq","parameters":{"name":"x_961043_room_re_0_rooms"}},{"label":"WTC","used":false,"image":"","rawLabel":"WTC","selected":false,"missing":false,"reference":false,"value":"wtc","parameters":{"name":"x_961043_room_re_0_rooms"}}]},{"name":"Created_1.current.room_requested.building","label":"Trigger - Record Created➛Room Reservation Request Record➛Room requested➛Building","reference":"","reference_display":"Building","type":"choice","base_type":"choice","parent_table_name":"x_961043_room_re_0_rooms","column_name":"building","choices":[{"label":"Building 30","used":false,"image":"","rawLabel":"Building 30","selected":false,"missing":false,"reference":false,"value":"building_30","parameters":{"name":"x_961043_room_re_0_rooms"}},{"label":"Building H","used":false,"image":"","rawLabel":"Building H","selected":false,"missing":false,"reference":false,"value":"building_h","parameters":{"name":"x_961043_room_re_0_rooms"}}]},{"name":"Created_1.current.room_requested.floor","label":"Trigger - Record Created➛Room Reservation Request Record➛Room requested➛Floor","reference":"","reference_display":"Floor","type":"choice","base_type":"choice","parent_table_name":"x_961043_room_re_0_rooms","column_name":"floor","choices":[{"label":"First Floor","used":false,"image":"","rawLabel":"First Floor","selected":false,"missing":false,"reference":false,"value":"first_floor","parameters":{"name":"x_961043_room_re_0_rooms"}},{"label":"Second Floor","used":false,"image":"","rawLabel":"Second Floor","selected":false,"missing":false,"reference":false,"value":"second_floor","parameters":{"name":"x_961043_room_re_0_rooms"}},{"label":"Third Floor","used":false,"image":"","rawLabel":"Third Floor","selected":false,"missing":false,"reference":false,"value":"third_floor","parameters":{"name":"x_961043_room_re_0_rooms"}},{"label":"1","used":false,"image":"","rawLabel":"1","selected":false,"missing":false,"reference":false,"value":"1","parameters":{"name":"x_961043_room_re_0_rooms"}}]},{"name":"Created_1.current.start_date","label":"Trigger - Record Created➛Room Reservation Request Record➛Start date","reference":"","reference_display":"Start date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_961043_room_re_0_room_reservation_request","column_name":"start_date"},{"name":"Created_1.current.end_date","label":"Trigger - Record Created➛Room Reservation Request Record➛End date","reference":"","reference_display":"End date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_961043_room_re_0_room_reservation_request","column_name":"end_date"}]</label_cache>
+        <master_snapshot>fdc66bd4472421107698016a436d433a</master_snapshot>
+        <name>Room Reservation Approval</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>c2c66bd4472421107698016a436d43bc</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 19:31:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>136f1710472421107698016a436d438c</sys_id>
+        <sys_name>Room Reservation Approval</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Room Reservation System" source="x_961043_room_re_0">7a3b6a1c472021107698016a436d430f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_update_name>sys_hub_flow_136f1710472421107698016a436d438c</sys_update_name>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=136f1710472421107698016a436d438c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=136f1710472421107698016a436d438c"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_961043_room_re_0_room_reservation_request">start_date&gt;javascript:gs.endOfTomorrow()<item endquery="false" field="start_date" goto="false" newquery="false" operator="&gt;" or="false" value="javascript:gs.endOfTomorrow()"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c2c66bd4472421107698016a436d43bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:33</sys_updated_on>
+        <table>x_961043_room_re_0_room_reservation_request</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>136f1710472421107698016a436d438c</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:33</sys_created_on>
+        <sys_id>8ec66bd4472421107698016a436d43bc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:33</sys_updated_on>
+        <trigger display_value="">c2c66bd4472421107698016a436d43bc</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=136f1710472421107698016a436d438c^sys_idNOT IN8ec66bd4472421107698016a436d43bc"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=136f1710472421107698016a436d438c^sys_idNOT INd1c62bd4472421107698016a436d4392"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Room Reservation Approval">136f1710472421107698016a436d438c</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>d1c62bd4472421107698016a436d4392</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:33</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d1c62bd4472421107698016a436d4392"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>d1c62bd4472421107698016a436d4392</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>19c62bd4472421107698016a436d4394</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:30</sys_updated_on>
+        <value>x_961043_room_re_0_room_reservation_request</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>d1c62bd4472421107698016a436d4392</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>51c62bd4472421107698016a436d4394</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:30</sys_updated_on>
+        <value>start_date&gt;javascript:gs.endOfTomorrow()</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=136f1710472421107698016a436d438c"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=136f1710472421107698016a436d438c^sys_idNOT IN536f1710472421107698016a436d438e"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>136f1710472421107698016a436d438c</id>
+        <name>Room Reservation Approval</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 19:31:25</sys_created_on>
+        <sys_id>536f1710472421107698016a436d438e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 19:31:25</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=536f1710472421107698016a436d438e"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=136f1710472421107698016a436d438c^sys_idNOT IN19c62bd4472421107698016a436d438c,55c62bd4472421107698016a436d4388"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Room Reservation Approval">136f1710472421107698016a436d438c</model>
+        <model_id>136f1710472421107698016a436d438c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_136f1710472421107698016a436d438c</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>19c62bd4472421107698016a436d438c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Room Reservation Approval">136f1710472421107698016a436d438c</model>
+        <model_id>136f1710472421107698016a436d438c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_136f1710472421107698016a436d438c</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>55c62bd4472421107698016a436d4388</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=136f1710472421107698016a436d438c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=136f1710472421107698016a436d438c"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=136f1710472421107698016a436d438c^sys_idNOT IN15c62bd4472421107698016a436d4399,15c62bd4472421107698016a436d43a1,5dc62bd4472421107698016a436d43ad,d5c62bd4472421107698016a436d43b5"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Room Reservation Approval">136f1710472421107698016a436d438c</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>15c62bd4472421107698016a436d4399</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:33</sys_updated_on>
+        <ui_id>878ae4eb-8020-42f5-ba47-9e91acd3cc75</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=15c62bd4472421107698016a436d4399"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>15c62bd4472421107698016a436d4399</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>11c62bd4472421107698016a436d439c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:30</sys_updated_on>
+        <value>state=2</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>15c62bd4472421107698016a436d4399</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>d1c62bd4472421107698016a436d439c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:30</sys_updated_on>
+        <value>x_961043_room_re_0_room_reservation_request</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=15c62bd4472421107698016a436d4399"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>15c62bd4472421107698016a436d4399</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>9dc62bd4472421107698016a436d439b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>15c62bd4472421107698016a436d4399</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>15c62bd4472421107698016a436d439b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>15c62bd4472421107698016a436d4399</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>d9c62bd4472421107698016a436d439b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=15c62bd4472421107698016a436d4399"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=15c62bd4472421107698016a436d4399"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Room Reservation Approval">136f1710472421107698016a436d438c</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>15c62bd4472421107698016a436d43a1</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:33</sys_updated_on>
+        <ui_id>89df32de-8b1b-44f8-b108-1d30ebd6b5ea</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=15c62bd4472421107698016a436d43a1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>15c62bd4472421107698016a436d43a1</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>15c62bd4472421107698016a436d43a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:30</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="Journal Field">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>15c62bd4472421107698016a436d43a1</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>51c62bd4472421107698016a436d43a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:30</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>15c62bd4472421107698016a436d43a1</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>99c62bd4472421107698016a436d43a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:30</sys_updated_on>
+        <value>x_961043_room_re_0_room_reservation_request</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>15c62bd4472421107698016a436d43a1</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>d5c62bd4472421107698016a436d43a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:30</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=15c62bd4472421107698016a436d43a1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>15c62bd4472421107698016a436d43a1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>1dc62bd4472421107698016a436d43a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesRejectsAnyU[{{Created_1.current.room_requested.owner}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>15c62bd4472421107698016a436d43a1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>11c62bd4472421107698016a436d43a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>15c62bd4472421107698016a436d43a1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>59c62bd4472421107698016a436d43a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>15c62bd4472421107698016a436d43a1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>d1c62bd4472421107698016a436d43a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>15c62bd4472421107698016a436d43a1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>95c62bd4472421107698016a436d43a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>15c62bd4472421107698016a436d43a1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>ddc62bd4472421107698016a436d43a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=15c62bd4472421107698016a436d43a1"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=15c62bd4472421107698016a436d43a1"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Room Reservation Approval">136f1710472421107698016a436d438c</flow>
+        <order>4</order>
+        <parent_ui_id>46f4b6b9-aefa-412a-9e8b-f32d55ae4114</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>5dc62bd4472421107698016a436d43ad</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:33</sys_updated_on>
+        <ui_id>e4414c5a-729a-4dee-8041-acc01be2af01</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5dc62bd4472421107698016a436d43ad"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5dc62bd4472421107698016a436d43ad</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>59c62bd4472421107698016a436d43af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:30</sys_updated_on>
+        <value>x_961043_room_re_0_room_reservation_request</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5dc62bd4472421107698016a436d43ad</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>95c62bd4472421107698016a436d43af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:30</sys_updated_on>
+        <value>state=3</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5dc62bd4472421107698016a436d43ad"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>5dc62bd4472421107698016a436d43ad</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>15c62bd4472421107698016a436d43af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>5dc62bd4472421107698016a436d43ad</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>9dc62bd4472421107698016a436d43ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>5dc62bd4472421107698016a436d43ad</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>51c62bd4472421107698016a436d43af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5dc62bd4472421107698016a436d43ad"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5dc62bd4472421107698016a436d43ad"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Room Reservation Approval">136f1710472421107698016a436d438c</flow>
+        <order>5</order>
+        <parent_ui_id>46f4b6b9-aefa-412a-9e8b-f32d55ae4114</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:31</sys_created_on>
+        <sys_id>d5c62bd4472421107698016a436d43b5</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:34</sys_updated_on>
+        <ui_id>a9d2ee6d-f96d-489d-8a9e-460bcc72db4d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d5c62bd4472421107698016a436d43b5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d5c62bd4472421107698016a436d43b5</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:31</sys_created_on>
+        <sys_id>19c62bd4472421107698016a436d43b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:31</sys_updated_on>
+        <value>x_961043_room_re_0_room_reservation_request</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d5c62bd4472421107698016a436d43b5</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:31</sys_created_on>
+        <sys_id>55c62bd4472421107698016a436d43b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:31</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d5c62bd4472421107698016a436d43b5</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:31</sys_created_on>
+        <sys_id>d9c62bd4472421107698016a436d43b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:31</sys_updated_on>
+        <value>Your room reservation request has been approved</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d5c62bd4472421107698016a436d43b5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>d5c62bd4472421107698016a436d43b5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:31</sys_created_on>
+        <sys_id>99c62bd4472421107698016a436d43b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p&gt;Hi&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:43d39679-3d78-41e7-b0ed-b0eca897d2bd}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:43d39679-3d78-41e7-b0ed-b0eca897d2bd}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger &amp;gt; Room Reservation Request Record &amp;gt; Opened by &amp;gt; First name"&gt;&lt;span class="pill-start"&gt;Trigger&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;First name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_43d39679-3d78-41e7-b0ed-b0eca897d2bd" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;,&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Your room reservation request for room &lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:e29fc095-7d83-4f51-b01f-4bc0fb6b44a9}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:e29fc095-7d83-4f51-b01f-4bc0fb6b44a9}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger &amp;gt; Room Reservation Request Record &amp;gt; Room requested &amp;gt; Room Number"&gt;&lt;span class="pill-start"&gt;Trigger&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Room Number&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_e29fc095-7d83-4f51-b01f-4bc0fb6b44a9" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;in&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:57634bb8-5e8a-4ecf-bde4-2fa913527ba7}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:57634bb8-5e8a-4ecf-bde4-2fa913527ba7}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger &amp;gt; Room Reservation Request Record &amp;gt; Room requested &amp;gt; Campus"&gt;&lt;span class="pill-start"&gt;Trigger&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Campus&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_57634bb8-5e8a-4ecf-bde4-2fa913527ba7" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:ddc8627c-f631-422d-a67e-34acf308fd11}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:ddc8627c-f631-422d-a67e-34acf308fd11}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger &amp;gt; Room Reservation Request Record &amp;gt; Room requested &amp;gt; Building"&gt;&lt;span class="pill-start"&gt;Trigger&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Building&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_ddc8627c-f631-422d-a67e-34acf308fd11" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&amp;nbsp; on the&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:1dd6a390-03be-4582-92b1-3160b7ff650e}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:1dd6a390-03be-4582-92b1-3160b7ff650e}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger &amp;gt; Room Reservation Request Record &amp;gt; Room requested &amp;gt; Floor"&gt;&lt;span class="pill-start"&gt;Trigger&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Floor&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_1dd6a390-03be-4582-92b1-3160b7ff650e" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;from&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:60f5498e-789d-4c16-805e-e26659a41666}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:60f5498e-789d-4c16-805e-e26659a41666}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger &amp;gt; Room Reservation Request Record &amp;gt; Start date"&gt;&lt;span class="pill-start"&gt;Trigger&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Start date&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_60f5498e-789d-4c16-805e-e26659a41666" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; to &lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:77f8363c-359d-4a37-ba67-778bf607abb9}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:77f8363c-359d-4a37-ba67-778bf607abb9}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger &amp;gt; Room Reservation Request Record &amp;gt; End date"&gt;&lt;span class="pill-start"&gt;Trigger&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;End date&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_77f8363c-359d-4a37-ba67-778bf607abb9" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&amp;nbsp;has been approved.&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>d5c62bd4472421107698016a436d43b5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:31</sys_created_on>
+        <sys_id>d1c62bd4472421107698016a436d43b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>d5c62bd4472421107698016a436d43b5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:31</sys_created_on>
+        <sys_id>d5c62bd4472421107698016a436d43b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{878ae4eb-8020-42f5-ba47-9e91acd3cc75.record.opened_by.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>d5c62bd4472421107698016a436d43b5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:31</sys_created_on>
+        <sys_id>5dc62bd4472421107698016a436d43b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{878ae4eb-8020-42f5-ba47-9e91acd3cc75.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>d5c62bd4472421107698016a436d43b5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:31</sys_created_on>
+        <sys_id>11c62bd4472421107698016a436d43b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d5c62bd4472421107698016a436d43b5"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d5c62bd4472421107698016a436d43b5"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=136f1710472421107698016a436d438c"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=136f1710472421107698016a436d438c^sys_idNOT IN5dc62bd4472421107698016a436d43a5"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">11c62bd4472421107698016a436d43a5</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Room Reservation Approval">136f1710472421107698016a436d438c</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>5dc62bd4472421107698016a436d43a5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:33</sys_updated_on>
+        <ui_id>46f4b6b9-aefa-412a-9e8b-f32d55ae4114</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=5dc62bd4472421107698016a436d43a5"/>
+    <sys_element_mapping action="delete_multiple" query="id=5dc62bd4472421107698016a436d43a5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>5dc62bd4472421107698016a436d43a5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>9dc62bd4472421107698016a436d43a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:30</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{89df32de-8b1b-44f8-b108-1d30ebd6b5ea.approval_state}}=approved</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=5dc62bd4472421107698016a436d43a5"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5dc62bd4472421107698016a436d43a5"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=136f1710472421107698016a436d438c^sys_idNOT IN11c62bd4472421107698016a436d43bd,15c62bd4472421107698016a436d43bc,51c62bd4472421107698016a436d43bc,5dc62bd4472421107698016a436d43bc,99c62bd4472421107698016a436d43bc,9dc62bd4472421107698016a436d43bb,a5c62bd4472421107698016a436d43bd,d5c62bd4472421107698016a436d43bb,d5c62bd4472421107698016a436d43bc,e1c62bd4472421107698016a436d43bd"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>136f1710472421107698016a436d438c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.room_requested.floor}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:31</sys_created_on>
+        <sys_id>11c62bd4472421107698016a436d43bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:31</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>1dd6a390-03be-4582-92b1-3160b7ff650e</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>136f1710472421107698016a436d438c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.room_requested.room_number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:31</sys_created_on>
+        <sys_id>15c62bd4472421107698016a436d43bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:31</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>e29fc095-7d83-4f51-b01f-4bc0fb6b44a9</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>136f1710472421107698016a436d438c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.opened_by.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:31</sys_created_on>
+        <sys_id>51c62bd4472421107698016a436d43bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:31</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>43d39679-3d78-41e7-b0ed-b0eca897d2bd</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>136f1710472421107698016a436d438c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.room_requested.building}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:31</sys_created_on>
+        <sys_id>5dc62bd4472421107698016a436d43bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:31</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>ddc8627c-f631-422d-a67e-34acf308fd11</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>136f1710472421107698016a436d438c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.room_requested.campus}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:31</sys_created_on>
+        <sys_id>99c62bd4472421107698016a436d43bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:31</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>d9a5a609-b60b-4b8b-b146-062a7b13d6ab</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>136f1710472421107698016a436d438c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{e4414c5a-729a-4dee-8041-acc01be2af01.record.room_requested.room_number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:31</sys_created_on>
+        <sys_id>9dc62bd4472421107698016a436d43bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:31</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>d9ef03a0-47de-458f-ab07-3d919cca9af7</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>136f1710472421107698016a436d438c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.end_date}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:31</sys_created_on>
+        <sys_id>a5c62bd4472421107698016a436d43bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:31</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>77f8363c-359d-4a37-ba67-778bf607abb9</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>136f1710472421107698016a436d438c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{878ae4eb-8020-42f5-ba47-9e91acd3cc75.record.opened_by.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:31</sys_created_on>
+        <sys_id>d5c62bd4472421107698016a436d43bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:31</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>e7f09454-e1bf-44dd-b08c-253b8c46970d</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>136f1710472421107698016a436d438c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.room_requested.campus}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:31</sys_created_on>
+        <sys_id>d5c62bd4472421107698016a436d43bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:31</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>57634bb8-5e8a-4ecf-bde4-2fa913527ba7</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>136f1710472421107698016a436d438c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.start_date}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:31</sys_created_on>
+        <sys_id>e1c62bd4472421107698016a436d43bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:31</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>60f5498e-789d-4c16-805e-e26659a41666</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=136f1710472421107698016a436d438c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_136f1710472421107698016a436d438c^sys_idNOT IN59c62bd4472421107698016a436d438b,5dc62bd4472421107698016a436d438e"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_136f1710472421107698016a436d438c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>59c62bd4472421107698016a436d438b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Room Reservation System" source="x_961043_room_re_0">7a3b6a1c472021107698016a436d430f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_136f1710472421107698016a436d438c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:30</sys_created_on>
+        <sys_id>5dc62bd4472421107698016a436d438e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Room Reservation System" source="x_961043_room_re_0">7a3b6a1c472021107698016a436d430f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_136f1710472421107698016a436d438c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_136f1710472421107698016a436d438c"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_136f1710472421107698016a436d438c"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=136f1710472421107698016a436d438c^sys_idNOT IN82c66bd4472421107698016a436d43be"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan/>
+        <plan_id>136f1710472421107698016a436d438c</plan_id>
+        <snapshot>fdc66bd4472421107698016a436d433a</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>82c66bd4472421107698016a436d43be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:33</sys_updated_on>
+        <trigger display_value="">c2c66bd4472421107698016a436d43bc</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=136f1710472421107698016a436d438c"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>room_reservation_approval</internal_name>
+        <label_cache>[{"name":"878ae4eb-8020-42f5-ba47-9e91acd3cc75.record","label":"1 - Update Record➛Room Reservation Request Record","reference":"x_961043_room_re_0_room_reservation_request","reference_display":"Room Reservation Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"878ae4eb-8020-42f5-ba47-9e91acd3cc75.table_name","label":"1 - Update Record➛Room Reservation Request Table","reference":"x_961043_room_re_0_room_reservation_request","reference_display":"Room Reservation Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"878ae4eb-8020-42f5-ba47-9e91acd3cc75.__action_status__","label":"1 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"878ae4eb-8020-42f5-ba47-9e91acd3cc75.__dont_treat_as_error__","label":"1 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Room Reservation Request Record","reference":"x_961043_room_re_0_room_reservation_request","reference_display":"Room Reservation Request","type":"reference","base_type":"reference","attributes":{}},{"name":"89df32de-8b1b-44f8-b108-1d30ebd6b5ea.approval_state","label":"2 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"89df32de-8b1b-44f8-b108-1d30ebd6b5ea.__action_status__","label":"2 - Ask For Approval➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"89df32de-8b1b-44f8-b108-1d30ebd6b5ea.__dont_treat_as_error__","label":"2 - Ask For Approval➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"Created_1.current.room_requested.owner","label":"Trigger - Record Created➛Room Reservation Request Record➛Room requested➛Owner","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_961043_room_re_0_rooms","column_name":"owner"},{"name":"e4414c5a-729a-4dee-8041-acc01be2af01.record","label":"4 - Update Record➛Room Reservation Request Record","reference":"x_961043_room_re_0_room_reservation_request","reference_display":"Room Reservation Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e4414c5a-729a-4dee-8041-acc01be2af01.table_name","label":"4 - Update Record➛Room Reservation Request Table","reference":"x_961043_room_re_0_room_reservation_request","reference_display":"Room Reservation Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e4414c5a-729a-4dee-8041-acc01be2af01.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"e4414c5a-729a-4dee-8041-acc01be2af01.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"a9d2ee6d-f96d-489d-8a9e-460bcc72db4d.email","label":"5 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a9d2ee6d-f96d-489d-8a9e-460bcc72db4d.__action_status__","label":"5 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"a9d2ee6d-f96d-489d-8a9e-460bcc72db4d.__dont_treat_as_error__","label":"5 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"878ae4eb-8020-42f5-ba47-9e91acd3cc75.record.opened_by.email","label":"1 - Update Record➛Room Reservation Request Record➛Opened by➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"878ae4eb-8020-42f5-ba47-9e91acd3cc75.record.opened_by.first_name","label":"1 - Update Record➛Room Reservation Request Record➛Opened by➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"e4414c5a-729a-4dee-8041-acc01be2af01.record.room_requested.room_number","label":"4 - Update Record➛Room Reservation Request Record➛Room requested➛Room Number","reference":"","reference_display":"Room Number","type":"string","base_type":"string","parent_table_name":"x_961043_room_re_0_rooms","column_name":"room_number"},{"name":"Created_1.current.opened_by.first_name","label":"Trigger - Record Created➛Room Reservation Request Record➛Opened by➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"Created_1.current.room_requested.room_number","label":"Trigger - Record Created➛Room Reservation Request Record➛Room requested➛Room Number","reference":"","reference_display":"Room Number","type":"string","base_type":"string","parent_table_name":"x_961043_room_re_0_rooms","column_name":"room_number"},{"name":"Created_1.current.room_requested.campus","label":"Trigger - Record Created➛Room Reservation Request Record➛Room requested➛Campus","reference":"","reference_display":"Campus","type":"choice","base_type":"choice","parent_table_name":"x_961043_room_re_0_rooms","column_name":"campus","choices":[{"label":"CAC","used":false,"image":"","rawLabel":"CAC","selected":false,"missing":false,"reference":false,"value":"cac","parameters":{"name":"x_961043_room_re_0_rooms"}},{"label":"WHQ","used":false,"image":"","rawLabel":"WHQ","selected":false,"missing":false,"reference":false,"value":"whq","parameters":{"name":"x_961043_room_re_0_rooms"}},{"label":"WTC","used":false,"image":"","rawLabel":"WTC","selected":false,"missing":false,"reference":false,"value":"wtc","parameters":{"name":"x_961043_room_re_0_rooms"}}]},{"name":"Created_1.current.room_requested.building","label":"Trigger - Record Created➛Room Reservation Request Record➛Room requested➛Building","reference":"","reference_display":"Building","type":"choice","base_type":"choice","parent_table_name":"x_961043_room_re_0_rooms","column_name":"building","choices":[{"label":"Building 30","used":false,"image":"","rawLabel":"Building 30","selected":false,"missing":false,"reference":false,"value":"building_30","parameters":{"name":"x_961043_room_re_0_rooms"}},{"label":"Building H","used":false,"image":"","rawLabel":"Building H","selected":false,"missing":false,"reference":false,"value":"building_h","parameters":{"name":"x_961043_room_re_0_rooms"}}]},{"name":"Created_1.current.room_requested.floor","label":"Trigger - Record Created➛Room Reservation Request Record➛Room requested➛Floor","reference":"","reference_display":"Floor","type":"choice","base_type":"choice","parent_table_name":"x_961043_room_re_0_rooms","column_name":"floor","choices":[{"label":"First Floor","used":false,"image":"","rawLabel":"First Floor","selected":false,"missing":false,"reference":false,"value":"first_floor","parameters":{"name":"x_961043_room_re_0_rooms"}},{"label":"Second Floor","used":false,"image":"","rawLabel":"Second Floor","selected":false,"missing":false,"reference":false,"value":"second_floor","parameters":{"name":"x_961043_room_re_0_rooms"}},{"label":"Third Floor","used":false,"image":"","rawLabel":"Third Floor","selected":false,"missing":false,"reference":false,"value":"third_floor","parameters":{"name":"x_961043_room_re_0_rooms"}},{"label":"1","used":false,"image":"","rawLabel":"1","selected":false,"missing":false,"reference":false,"value":"1","parameters":{"name":"x_961043_room_re_0_rooms"}}]},{"name":"Created_1.current.start_date","label":"Trigger - Record Created➛Room Reservation Request Record➛Start date","reference":"","reference_display":"Start date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_961043_room_re_0_room_reservation_request","column_name":"start_date"},{"name":"Created_1.current.end_date","label":"Trigger - Record Created➛Room Reservation Request Record➛End date","reference":"","reference_display":"End date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_961043_room_re_0_room_reservation_request","column_name":"end_date"}]</label_cache>
+        <master>true</master>
+        <name>Room Reservation Approval</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Room Reservation Approval">136f1710472421107698016a436d438c</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fdc66bd4472421107698016a436d433a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=fdc66bd4472421107698016a436d433a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=fdc66bd4472421107698016a436d433a"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=fdc66bd4472421107698016a436d433a^sys_idNOT INb5c66bd4472421107698016a436d437f"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Room Reservation Approval">fdc66bd4472421107698016a436d433a</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:33</sys_created_on>
+        <sys_id>b5c66bd4472421107698016a436d437f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:33</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b5c66bd4472421107698016a436d437f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>b5c66bd4472421107698016a436d437f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:33</sys_created_on>
+        <sys_id>bdc66bd4472421107698016a436d4380</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:33</sys_updated_on>
+        <value>x_961043_room_re_0_room_reservation_request</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>b5c66bd4472421107698016a436d437f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:33</sys_created_on>
+        <sys_id>f9c66bd4472421107698016a436d4380</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:33</sys_updated_on>
+        <value>start_date&gt;javascript:gs.endOfTomorrow()</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=fdc66bd4472421107698016a436d433a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=fdc66bd4472421107698016a436d433a^sys_idNOT INfdc66bd4472421107698016a436d433b"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>fdc66bd4472421107698016a436d433a</id>
+        <name>Room Reservation Approval</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>fdc66bd4472421107698016a436d433b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=fdc66bd4472421107698016a436d433b"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=fdc66bd4472421107698016a436d433a^sys_idNOT IN35c66bd4472421107698016a436d433d,b5c66bd4472421107698016a436d434d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Room Reservation Approval">fdc66bd4472421107698016a436d433a</model>
+        <model_id>fdc66bd4472421107698016a436d433a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_fdc66bd4472421107698016a436d433a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>35c66bd4472421107698016a436d433d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Room Reservation Approval">fdc66bd4472421107698016a436d433a</model>
+        <model_id>fdc66bd4472421107698016a436d433a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_fdc66bd4472421107698016a436d433a</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>b5c66bd4472421107698016a436d434d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=fdc66bd4472421107698016a436d433a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fdc66bd4472421107698016a436d433a"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=fdc66bd4472421107698016a436d433a^sys_idNOT IN71c66bd4472421107698016a436d4372,b1c66bd4472421107698016a436d4362,b1c66bd4472421107698016a436d436b,f1c66bd4472421107698016a436d437c"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Room Reservation Approval">fdc66bd4472421107698016a436d433a</flow>
+        <order>4</order>
+        <parent_ui_id>46f4b6b9-aefa-412a-9e8b-f32d55ae4114</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>71c66bd4472421107698016a436d4372</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <ui_id>e4414c5a-729a-4dee-8041-acc01be2af01</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=71c66bd4472421107698016a436d4372"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>71c66bd4472421107698016a436d4372</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>7dc66bd4472421107698016a436d4373</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <value>x_961043_room_re_0_room_reservation_request</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>71c66bd4472421107698016a436d4372</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>b9c66bd4472421107698016a436d4373</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <value>state=3</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=71c66bd4472421107698016a436d4372"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>71c66bd4472421107698016a436d4372</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>39c66bd4472421107698016a436d4373</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>71c66bd4472421107698016a436d4372</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>b1c66bd4472421107698016a436d4373</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>71c66bd4472421107698016a436d4372</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>75c66bd4472421107698016a436d4373</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=71c66bd4472421107698016a436d4372"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=71c66bd4472421107698016a436d4372"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Room Reservation Approval">fdc66bd4472421107698016a436d433a</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>b1c66bd4472421107698016a436d4362</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <ui_id>878ae4eb-8020-42f5-ba47-9e91acd3cc75</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b1c66bd4472421107698016a436d4362"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b1c66bd4472421107698016a436d4362</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>bdc66bd4472421107698016a436d4363</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <value>x_961043_room_re_0_room_reservation_request</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b1c66bd4472421107698016a436d4362</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>f9c66bd4472421107698016a436d4363</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <value>state=2</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b1c66bd4472421107698016a436d4362"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>b1c66bd4472421107698016a436d4362</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>79c66bd4472421107698016a436d4363</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>b1c66bd4472421107698016a436d4362</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>f1c66bd4472421107698016a436d4363</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>b1c66bd4472421107698016a436d4362</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>b5c66bd4472421107698016a436d4363</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b1c66bd4472421107698016a436d4362"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b1c66bd4472421107698016a436d4362"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Room Reservation Approval">fdc66bd4472421107698016a436d433a</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>b1c66bd4472421107698016a436d436b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <ui_id>89df32de-8b1b-44f8-b108-1d30ebd6b5ea</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b1c66bd4472421107698016a436d436b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b1c66bd4472421107698016a436d436b</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>31c66bd4472421107698016a436d436e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b1c66bd4472421107698016a436d436b</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>7dc66bd4472421107698016a436d436d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="Journal Field">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b1c66bd4472421107698016a436d436b</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>b9c66bd4472421107698016a436d436d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b1c66bd4472421107698016a436d436b</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>f1c66bd4472421107698016a436d436e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <value>x_961043_room_re_0_room_reservation_request</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b1c66bd4472421107698016a436d436b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>b1c66bd4472421107698016a436d436b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>75c66bd4472421107698016a436d436d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesRejectsAnyU[{{Created_1.current.room_requested.owner}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>b1c66bd4472421107698016a436d436b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>79c66bd4472421107698016a436d436c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>b1c66bd4472421107698016a436d436b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>b1c66bd4472421107698016a436d436d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>b1c66bd4472421107698016a436d436b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>3dc66bd4472421107698016a436d436c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>b1c66bd4472421107698016a436d436b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>fdc66bd4472421107698016a436d436c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>b1c66bd4472421107698016a436d436b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>39c66bd4472421107698016a436d436d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b1c66bd4472421107698016a436d436b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b1c66bd4472421107698016a436d436b"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Room Reservation Approval">fdc66bd4472421107698016a436d433a</flow>
+        <order>5</order>
+        <parent_ui_id>46f4b6b9-aefa-412a-9e8b-f32d55ae4114</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>f1c66bd4472421107698016a436d437c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <ui_id>a9d2ee6d-f96d-489d-8a9e-460bcc72db4d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f1c66bd4472421107698016a436d437c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f1c66bd4472421107698016a436d437c</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:33</sys_created_on>
+        <sys_id>3dc66bd4472421107698016a436d437e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:33</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f1c66bd4472421107698016a436d437c</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:33</sys_created_on>
+        <sys_id>b1c66bd4472421107698016a436d437f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:33</sys_updated_on>
+        <value>Your room reservation request has been approved</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f1c66bd4472421107698016a436d437c</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:33</sys_created_on>
+        <sys_id>fdc66bd4472421107698016a436d437e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:33</sys_updated_on>
+        <value>x_961043_room_re_0_room_reservation_request</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f1c66bd4472421107698016a436d437c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>f1c66bd4472421107698016a436d437c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>71c66bd4472421107698016a436d437e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p&gt;Hi&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:43d39679-3d78-41e7-b0ed-b0eca897d2bd}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:43d39679-3d78-41e7-b0ed-b0eca897d2bd}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger &amp;gt; Room Reservation Request Record &amp;gt; Opened by &amp;gt; First name"&gt;&lt;span class="pill-start"&gt;Trigger&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;First name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_43d39679-3d78-41e7-b0ed-b0eca897d2bd" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;,&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Your room reservation request for room &lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:e29fc095-7d83-4f51-b01f-4bc0fb6b44a9}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:e29fc095-7d83-4f51-b01f-4bc0fb6b44a9}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger &amp;gt; Room Reservation Request Record &amp;gt; Room requested &amp;gt; Room Number"&gt;&lt;span class="pill-start"&gt;Trigger&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Room Number&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_e29fc095-7d83-4f51-b01f-4bc0fb6b44a9" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;in&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:57634bb8-5e8a-4ecf-bde4-2fa913527ba7}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:57634bb8-5e8a-4ecf-bde4-2fa913527ba7}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger &amp;gt; Room Reservation Request Record &amp;gt; Room requested &amp;gt; Campus"&gt;&lt;span class="pill-start"&gt;Trigger&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Campus&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_57634bb8-5e8a-4ecf-bde4-2fa913527ba7" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:ddc8627c-f631-422d-a67e-34acf308fd11}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:ddc8627c-f631-422d-a67e-34acf308fd11}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger &amp;gt; Room Reservation Request Record &amp;gt; Room requested &amp;gt; Building"&gt;&lt;span class="pill-start"&gt;Trigger&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Building&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_ddc8627c-f631-422d-a67e-34acf308fd11" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&amp;nbsp; on the&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:1dd6a390-03be-4582-92b1-3160b7ff650e}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:1dd6a390-03be-4582-92b1-3160b7ff650e}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger &amp;gt; Room Reservation Request Record &amp;gt; Room requested &amp;gt; Floor"&gt;&lt;span class="pill-start"&gt;Trigger&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Floor&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_1dd6a390-03be-4582-92b1-3160b7ff650e" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;from&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:60f5498e-789d-4c16-805e-e26659a41666}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:60f5498e-789d-4c16-805e-e26659a41666}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger &amp;gt; Room Reservation Request Record &amp;gt; Start date"&gt;&lt;span class="pill-start"&gt;Trigger&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Start date&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_60f5498e-789d-4c16-805e-e26659a41666" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; to &lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:77f8363c-359d-4a37-ba67-778bf607abb9}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:77f8363c-359d-4a37-ba67-778bf607abb9}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger &amp;gt; Room Reservation Request Record &amp;gt; End date"&gt;&lt;span class="pill-start"&gt;Trigger&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;End date&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_77f8363c-359d-4a37-ba67-778bf607abb9" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&amp;nbsp;has been approved.&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>f1c66bd4472421107698016a436d437c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:33</sys_created_on>
+        <sys_id>b9c66bd4472421107698016a436d437e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:33</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>f1c66bd4472421107698016a436d437c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>bdc66bd4472421107698016a436d437d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{878ae4eb-8020-42f5-ba47-9e91acd3cc75.record.opened_by.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>f1c66bd4472421107698016a436d437c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>35c66bd4472421107698016a436d437e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{878ae4eb-8020-42f5-ba47-9e91acd3cc75.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>f1c66bd4472421107698016a436d437c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>f5c66bd4472421107698016a436d437e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f1c66bd4472421107698016a436d437c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f1c66bd4472421107698016a436d437c"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=fdc66bd4472421107698016a436d433a"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=fdc66bd4472421107698016a436d433a^sys_idNOT IN71c66bd4472421107698016a436d4359"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">11c62bd4472421107698016a436d43a5</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Room Reservation Approval">fdc66bd4472421107698016a436d433a</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>71c66bd4472421107698016a436d4359</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <ui_id>46f4b6b9-aefa-412a-9e8b-f32d55ae4114</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=71c66bd4472421107698016a436d4359"/>
+    <sys_element_mapping action="delete_multiple" query="id=71c66bd4472421107698016a436d4359"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>71c66bd4472421107698016a436d4359</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>b5c66bd4472421107698016a436d435c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{89df32de-8b1b-44f8-b108-1d30ebd6b5ea.approval_state}}=approved</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=71c66bd4472421107698016a436d4359"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=71c66bd4472421107698016a436d4359"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=fdc66bd4472421107698016a436d433a^sys_idNOT IN71c66bd4472421107698016a436d4381,71c66bd4472421107698016a436d4382,75c66bd4472421107698016a436d4381,79c66bd4472421107698016a436d4381,7dc66bd4472421107698016a436d4381,f1c66bd4472421107698016a436d4381,f1c66bd4472421107698016a436d4382,f5c66bd4472421107698016a436d4381,f9c66bd4472421107698016a436d4381,fdc66bd4472421107698016a436d4381"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fdc66bd4472421107698016a436d433a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.opened_by.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:33</sys_created_on>
+        <sys_id>71c66bd4472421107698016a436d4381</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:33</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>43d39679-3d78-41e7-b0ed-b0eca897d2bd</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fdc66bd4472421107698016a436d433a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.room_requested.room_number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:33</sys_created_on>
+        <sys_id>71c66bd4472421107698016a436d4382</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:33</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>e29fc095-7d83-4f51-b01f-4bc0fb6b44a9</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fdc66bd4472421107698016a436d433a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.start_date}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:33</sys_created_on>
+        <sys_id>75c66bd4472421107698016a436d4381</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:33</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>60f5498e-789d-4c16-805e-e26659a41666</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fdc66bd4472421107698016a436d433a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.end_date}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:33</sys_created_on>
+        <sys_id>79c66bd4472421107698016a436d4381</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:33</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>77f8363c-359d-4a37-ba67-778bf607abb9</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fdc66bd4472421107698016a436d433a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.room_requested.floor}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:33</sys_created_on>
+        <sys_id>7dc66bd4472421107698016a436d4381</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:33</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>1dd6a390-03be-4582-92b1-3160b7ff650e</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fdc66bd4472421107698016a436d433a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{e4414c5a-729a-4dee-8041-acc01be2af01.record.room_requested.room_number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:33</sys_created_on>
+        <sys_id>f1c66bd4472421107698016a436d4381</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:33</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>d9ef03a0-47de-458f-ab07-3d919cca9af7</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fdc66bd4472421107698016a436d433a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.room_requested.building}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:33</sys_created_on>
+        <sys_id>f1c66bd4472421107698016a436d4382</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:33</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>ddc8627c-f631-422d-a67e-34acf308fd11</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fdc66bd4472421107698016a436d433a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.room_requested.campus}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:33</sys_created_on>
+        <sys_id>f5c66bd4472421107698016a436d4381</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:33</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>d9a5a609-b60b-4b8b-b146-062a7b13d6ab</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fdc66bd4472421107698016a436d433a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{878ae4eb-8020-42f5-ba47-9e91acd3cc75.record.opened_by.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:33</sys_created_on>
+        <sys_id>f9c66bd4472421107698016a436d4381</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:33</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>e7f09454-e1bf-44dd-b08c-253b8c46970d</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>fdc66bd4472421107698016a436d433a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.room_requested.campus}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:33</sys_created_on>
+        <sys_id>fdc66bd4472421107698016a436d4381</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:33</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>57634bb8-5e8a-4ecf-bde4-2fa913527ba7</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=fdc66bd4472421107698016a436d433a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_fdc66bd4472421107698016a436d433a^sys_idNOT IN3dc66bd4472421107698016a436d4351,7dc66bd4472421107698016a436d4349"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_fdc66bd4472421107698016a436d433a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>3dc66bd4472421107698016a436d4351</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Room Reservation System" source="x_961043_room_re_0">7a3b6a1c472021107698016a436d430f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_fdc66bd4472421107698016a436d433a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:03:32</sys_created_on>
+        <sys_id>7dc66bd4472421107698016a436d4349</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Room Reservation System" source="x_961043_room_re_0">7a3b6a1c472021107698016a436d430f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 20:03:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_fdc66bd4472421107698016a436d433a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_fdc66bd4472421107698016a436d433a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_fdc66bd4472421107698016a436d433a"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>136f1710472421107698016a436d438c</sys_id>
+        <latest_snapshot>fdc66bd4472421107698016a436d433a</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+</record_update>

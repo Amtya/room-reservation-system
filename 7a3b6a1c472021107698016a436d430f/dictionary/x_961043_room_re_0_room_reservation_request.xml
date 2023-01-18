@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="49e0b690476021107698016a436d435d" extends="task" label="Room Reservation Request" max_length="40" name="x_961043_room_re_0_room_reservation_request" text_index="true" type="collection">
+        <element label="End date" max_length="40" name="end_date" type="glide_date"/>
+        <element label="Room requested" max_length="32" name="room_requested" reference="x_961043_room_re_0_rooms" type="reference"/>
+        <element label="Start date" max_length="40" name="start_date" type="glide_date"/>
+    </element>
+</database>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">6b889b9458e02110481e6e63aea0b694</canvas>
+        <component display_value="">3a64f550256090d9578ede76158e899c</component>
+        <component_props>{"variant":"header-secondary","label":"My Work","wontWrap":false,"hasNoMargin":false,"level":"1"}</component_props>
+        <h>3</h>
+        <name/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 19:01:24</sys_created_on>
+        <sys_id>ab889b9458e02110fe18b21360aea89a</sys_id>
+        <sys_name/>
+        <sys_package display_value="Room Reservation System" source="x_961043_room_re_0">7a3b6a1c472021107698016a436d430f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_update_name>par_dashboard_widget_ab889b9458e02110fe18b21360aea89a</sys_update_name>
+        <visualization/>
+        <w>12</w>
+        <x>0</x>
+        <y>12</y>
+    </par_dashboard_widget>
+</record_update>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_action_param_map">
+    <sys_sg_action_param_map action="INSERT_OR_UPDATE">
+        <button display_value="New Button (Room Reservations)">e5ca579847e021107698016a436d43c8</button>
+        <item_parameter display_value="Room Reservations cmdb_ci">21ca579847e021107698016a436d43c7</item_parameter>
+        <sys_class_name>sys_sg_action_param_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 19:11:05</sys_created_on>
+        <sys_id>e5ca579847e021107698016a436d43f5</sys_id>
+        <sys_name>21ca579847e021107698016a436d43c7</sys_name>
+        <sys_package display_value="Room Reservation System" source="x_961043_room_re_0">7a3b6a1c472021107698016a436d430f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_update_name>sys_sg_action_param_map_e5ca579847e021107698016a436d43f5</sys_update_name>
+        <ui_parameter display_value="Configuration item">65ca579847e021107698016a436d43f3</ui_parameter>
+    </sys_sg_action_param_map>
+</record_update>

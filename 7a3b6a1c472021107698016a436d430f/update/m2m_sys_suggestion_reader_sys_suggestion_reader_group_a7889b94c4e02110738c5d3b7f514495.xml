@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sys_suggestion_reader_sys_suggestion_reader_group">
+    <m2m_sys_suggestion_reader_sys_suggestion_reader_group action="INSERT_OR_UPDATE">
+        <order>100</order>
+        <reader_requested_fields/>
+        <reader_searchable_fields/>
+        <sys_class_name>m2m_sys_suggestion_reader_sys_suggestion_reader_group</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 19:01:25</sys_created_on>
+        <sys_id>a7889b94c4e02110738c5d3b7f514495</sys_id>
+        <sys_name/>
+        <sys_package display_value="Room Reservation System" source="x_961043_room_re_0">7a3b6a1c472021107698016a436d430f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_suggestion_reader_group_id display_value="Suggested Result Reader Group for Starter Workspace AI Search Configuration">27889b9419e021107b7fb5d62e3eaa99</sys_suggestion_reader_group_id>
+        <sys_suggestion_reader_id display_value="Personal Click Reader">ec49ee515b511010627eed35cc81c7b9</sys_suggestion_reader_id>
+        <sys_update_name>m2m_sys_suggestion_reader_sys_suggestion_reader_group_a7889b94c4e02110738c5d3b7f514495</sys_update_name>
+    </m2m_sys_suggestion_reader_sys_suggestion_reader_group>
+</record_update>

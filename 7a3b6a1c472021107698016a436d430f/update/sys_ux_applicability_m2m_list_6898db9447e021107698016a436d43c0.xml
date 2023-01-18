@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_list">
+    <sys_ux_applicability_m2m_list action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applicability display_value="Audience for app room-reservation-system">4498db9447e021107698016a436d436a</applicability>
+        <list display_value="All">e898db9447e021107698016a436d43be</list>
+        <order>100</order>
+        <sys_class_name>sys_ux_applicability_m2m_list</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 19:01:28</sys_created_on>
+        <sys_id>6898db9447e021107698016a436d43c0</sys_id>
+        <sys_name/>
+        <sys_package display_value="Room Reservation System" source="x_961043_room_re_0">7a3b6a1c472021107698016a436d430f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_update_name>sys_ux_applicability_m2m_list_6898db9447e021107698016a436d43c0</sys_update_name>
+    </sys_ux_applicability_m2m_list>
+</record_update>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_search_filter">
+    <sys_search_filter action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <ais_search_source display_value="Room Reservation Request">5a98df9447e021107698016a436d4306</ais_search_source>
+        <label>Room Reservation Request</label>
+        <name>Room Reservation Request</name>
+        <order>100</order>
+        <search_context_config display_value="Room Reservation System AI Search Configuration">2b889b94f5e021105fac9d41a51ebf95</search_context_config>
+        <sys_class_name>sys_search_filter</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 19:01:35</sys_created_on>
+        <sys_id>9a98df9447e021107698016a436d4330</sys_id>
+        <sys_name>Room Reservation Request</sys_name>
+        <sys_package display_value="Room Reservation System" source="x_961043_room_re_0">7a3b6a1c472021107698016a436d430f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_update_name>sys_search_filter_9a98df9447e021107698016a436d4330</sys_update_name>
+    </sys_search_filter>
+</record_update>

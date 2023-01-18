@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="Reserve a Room">a36b9bd847e021107698016a436d43c5</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 19:21:29</sys_created_on>
+        <sys_id>f92d9f5c47e021107698016a436d4353</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Reserve a Room</sys_name>
+        <sys_package display_value="Room Reservation System" source="x_961043_room_re_0">7a3b6a1c472021107698016a436d430f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_f92d9f5c47e021107698016a436d4353</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 19:21:29</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</application>
+        <file_path/>
+        <instance_id>638d6ed4dba71784cbf6d5b0cf961905</instance_id>
+        <instance_name>dev66698</instance_name>
+        <name>sc_cat_item_catalog_f92d9f5c47e021107698016a436d4353</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Reserve a Room">a36b9bd847e021107698016a436d43c5</sc_cat_item><sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-01-18 19:21:29</sys_created_on><sys_id>f92d9f5c47e021107698016a436d4353</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Service Catalog.Reserve a Room</sys_name><sys_package display_value="Room Reservation System" source="x_961043_room_re_0">7a3b6a1c472021107698016a436d430f</sys_package><sys_policy/><sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope><sys_update_name>sc_cat_item_catalog_f92d9f5c47e021107698016a436d4353</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-01-18 19:21:29</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>-187192925</payload_hash>
+        <record_name>Service Catalog.Reserve a Room</record_name>
+        <reverted_from/>
+        <source>3e3b6a1c472021107698016a436d4311</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 19:21:29</sys_created_on>
+        <sys_id>f52d9f5c47e021107698016a436d4356</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>185c65446070000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 19:21:29</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>7d2d9f5c72e0211026dd09787218fb55</update_guid>
+        <update_guid_history>7d2d9f5c72e0211026dd09787218fb55:-187192925</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Service Catalog.Reserve a Room">9a5d539c47e021107698016a436d43d6</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 19:22:20</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>1dfa9c2a7fe2482b83fb0e0df634fe11</sys_id>
+        <sys_metadata>f92d9f5c47e021107698016a436d4353</sys_metadata>
+        <sys_name>Service Catalog.Reserve a Room</sys_name>
+        <sys_package display_value="Room Reservation System" source="x_961043_room_re_0">7a3b6a1c472021107698016a436d430f</sys_package>
+        <sys_parent display_value="Reserve a Room">a36b9bd847e021107698016a436d43c5</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_scope_delete display_value="">470ecf0ec82e4e40a1f0ebb2365aa400</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_f92d9f5c47e021107698016a436d4353</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_f92d9f5c47e021107698016a436d4353">f52d9f5c47e021107698016a436d4356</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

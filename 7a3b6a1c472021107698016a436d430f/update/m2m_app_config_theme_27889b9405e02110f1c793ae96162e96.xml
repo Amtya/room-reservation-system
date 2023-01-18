@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_app_config_theme">
+    <m2m_app_config_theme action="INSERT_OR_UPDATE">
+        <applicability/>
+        <order>0</order>
+        <sys_class_name>m2m_app_config_theme</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 19:01:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>27889b9405e02110f1c793ae96162e96</sys_id>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Room Reservation System" source="x_961043_room_re_0">7a3b6a1c472021107698016a436d430f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_update_name>m2m_app_config_theme_27889b9405e02110f1c793ae96162e96</sys_update_name>
+        <theme display_value="Starter Workspace Theme">ab889b941de021107e324bead3466994</theme>
+        <ux_app_configuration display_value="Room Reservation System Config">6b889b9449e02110c50925c3eb8ded9a</ux_app_configuration>
+    </m2m_app_config_theme>
+</record_update>

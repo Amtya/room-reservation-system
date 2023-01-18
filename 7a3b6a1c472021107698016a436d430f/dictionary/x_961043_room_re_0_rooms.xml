@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="53be6edc472021107698016a436d433a" label="Rooms" max_length="40" name="x_961043_room_re_0_rooms" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="3" default="building_30" label="Building" mandatory="true" max_length="40" name="building" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Building 30" value="building_30"/>
+                <element inactive_on_update="false" label="Building H" value="building_h"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="wtc" label="Campus" mandatory="true" max_length="40" name="campus" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="CAC" value="cac"/>
+                <element inactive_on_update="false" label="WHQ" value="whq"/>
+                <element inactive_on_update="false" label="WTC" value="wtc"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="first_floor" label="Floor" mandatory="true" max_length="40" name="floor" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="First Floor" value="first_floor"/>
+                <element inactive_on_update="false" label="Second Floor" value="second_floor"/>
+                <element inactive_on_update="false" label="Third Floor" value="third_floor"/>
+                <element inactive_on_update="false" label="1" sequence="0" value="1"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="encode_utf8=false" label="Owner" max_length="32" name="owner" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Room Number" max_length="40" name="room_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="cubicle" label="Type" mandatory="true" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Conference Room" value="conference_room"/>
+                <element inactive_on_update="false" label="Cubicle" value="cubicle"/>
+                <element inactive_on_update="false" label="Office" value="office"/>
+                <element inactive_on_update="false" label="Conference" sequence="0" value="Conference"/>
+                <element inactive_on_update="false" label="Cube" sequence="0" value="Cube"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="owner"/>
+        </index>
+    </element>
+</database>

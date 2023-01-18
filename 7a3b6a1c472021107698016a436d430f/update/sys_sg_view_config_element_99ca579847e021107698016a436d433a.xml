@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_config_element">
+    <sys_sg_view_config_element action="INSERT_OR_UPDATE">
+        <name>opened_by.avatar-FieldValue</name>
+        <sys_class_name>sys_sg_view_config_element</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 19:11:05</sys_created_on>
+        <sys_id>99ca579847e021107698016a436d433a</sys_id>
+        <sys_name>opened_by.avatar-FieldValue</sys_name>
+        <sys_package display_value="Room Reservation System" source="x_961043_room_re_0">7a3b6a1c472021107698016a436d430f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_update_name>sys_sg_view_config_element_99ca579847e021107698016a436d433a</sys_update_name>
+        <view_config display_value="Room Reservations List Screen View Config">51ca579847e021107698016a436d4311</view_config>
+        <view_template_slot display_value="image_01">caf849b041275010f877183fc9b8be4e</view_template_slot>
+    </sys_sg_view_config_element>
+</record_update>

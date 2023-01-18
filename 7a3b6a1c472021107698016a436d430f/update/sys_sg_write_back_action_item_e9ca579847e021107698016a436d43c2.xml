@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_write_back_action_item">
+    <sys_sg_write_back_action_item action="INSERT_OR_UPDATE">
+        <description/>
+        <execution_script/>
+        <name>New</name>
+        <parameter_screen/>
+        <query_condition table="x_961043_room_re_0_room_reservation_request">sys_idSTARTSWITH{{sys_id}}^EQ<item endquery="false" field="sys_id" goto="false" newquery="false" operator="STARTSWITH" or="false" value="{{sys_id}}"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </query_condition>
+        <sys_class_name>sys_sg_write_back_action_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 19:11:05</sys_created_on>
+        <sys_id>e9ca579847e021107698016a436d43c2</sys_id>
+        <sys_name>New</sys_name>
+        <sys_package display_value="Room Reservation System" source="x_961043_room_re_0">7a3b6a1c472021107698016a436d430f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_update_name>sys_sg_write_back_action_item_e9ca579847e021107698016a436d43c2</sys_update_name>
+        <table>x_961043_room_re_0_room_reservation_request</table>
+        <template>priority={{Room Reservations priority}}^state={{Room Reservations state}}^short_description={{Room Reservations short_description}}^description={{Room Reservations description}}^assigned_to={{Room Reservations assigned_to}}^assignment_group={{Room Reservations assignment_group}}^company={{Room Reservations company}}^location={{Room Reservations location}}^cmdb_ci={{Room Reservations cmdb_ci}}^business_service={{Room Reservations business_service}}^EQ</template>
+        <type>new</type>
+        <use_current_record_as_condition>false</use_current_record_as_condition>
+        <use_fields_for_ref_lookup>false</use_fields_for_ref_lookup>
+    </sys_sg_write_back_action_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=e9ca579847e021107698016a436d43c2"/>
+</record_update>

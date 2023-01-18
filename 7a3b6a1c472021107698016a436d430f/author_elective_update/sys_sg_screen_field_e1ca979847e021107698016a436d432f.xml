@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_screen_field">
+    <sys_sg_screen_field action="DELETE">
+        <data_item_field_name>cmdb_ci</data_item_field_name>
+        <field_name/>
+        <hidden>false</hidden>
+        <order>90</order>
+        <record_id_field/>
+        <screen display_value="Details">25ca579847e021107698016a436d439c</screen>
+        <screen_data_item_table>x_961043_room_re_0_room_reservation_request</screen_data_item_table>
+        <sys_class_name>sys_sg_screen_field</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 19:11:06</sys_created_on>
+        <sys_id>e1ca979847e021107698016a436d432f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>cmdb_ci</sys_name>
+        <sys_package display_value="Room Reservation System" source="x_961043_room_re_0">7a3b6a1c472021107698016a436d430f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_update_name>sys_sg_screen_field_e1ca979847e021107698016a436d432f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 19:11:06</sys_updated_on>
+        <type>auto</type>
+        <value_only>false</value_only>
+    </sys_sg_screen_field>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</application>
+        <file_path/>
+        <instance_id>638d6ed4dba71784cbf6d5b0cf961905</instance_id>
+        <instance_name>dev66698</instance_name>
+        <name>sys_sg_screen_field_e1ca979847e021107698016a436d432f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_screen_field"><sys_sg_screen_field action="INSERT_OR_UPDATE"><data_item_field_name>cmdb_ci</data_item_field_name><field_name/><hidden>false</hidden><order>90</order><record_id_field/><screen display_value="Details">25ca579847e021107698016a436d439c</screen><screen_data_item_table>x_961043_room_re_0_room_reservation_request</screen_data_item_table><sys_class_name>sys_sg_screen_field</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-01-18 19:11:06</sys_created_on><sys_id>e1ca979847e021107698016a436d432f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>cmdb_ci</sys_name><sys_package display_value="Room Reservation System" source="x_961043_room_re_0">7a3b6a1c472021107698016a436d430f</sys_package><sys_policy/><sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope><sys_update_name>sys_sg_screen_field_e1ca979847e021107698016a436d432f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-01-18 19:11:06</sys_updated_on><type>auto</type><value_only>false</value_only></sys_sg_screen_field></record_update>]]></payload>
+        <payload_hash>-1875025946</payload_hash>
+        <record_name>cmdb_ci</record_name>
+        <reverted_from/>
+        <source>3e3b6a1c472021107698016a436d4311</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 19:11:08</sys_created_on>
+        <sys_id>56ca5b9847e021107698016a436d4347</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>185c64acb250000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 19:11:08</sys_updated_on>
+        <type>Screen fields</type>
+        <update_guid>deca5b98c1e02110bcec7855e301f846</update_guid>
+        <update_guid_history>deca5b98c1e02110bcec7855e301f846:-1875025946</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 20:18:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_sg_screen_field">sys_sg_screen_field</sys_db_object>
+        <sys_id>24f89af8df2b4b609d66fcbb23b720c9</sys_id>
+        <sys_metadata>e1ca979847e021107698016a436d432f</sys_metadata>
+        <sys_name>cmdb_ci</sys_name>
+        <sys_package display_value="Room Reservation System" source="x_961043_room_re_0">7a3b6a1c472021107698016a436d430f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_scope_delete display_value="">470ecf0ec82e4e40a1f0ebb2365aa400</sys_scope_delete>
+        <sys_update_name>sys_sg_screen_field_e1ca979847e021107698016a436d432f</sys_update_name>
+        <sys_update_version display_value="sys_sg_screen_field_e1ca979847e021107698016a436d432f">56ca5b9847e021107698016a436d4347</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

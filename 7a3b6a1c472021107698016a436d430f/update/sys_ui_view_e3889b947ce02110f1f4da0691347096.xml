@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>Workspace-Room-Reservation-System-0</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-18 19:01:25</sys_created_on>
+        <sys_id>e3889b947ce02110f1f4da0691347096</sys_id>
+        <sys_name>Workspace Room Reservation System 0</sys_name>
+        <sys_package display_value="Room Reservation System" source="x_961043_room_re_0">7a3b6a1c472021107698016a436d430f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation System">7a3b6a1c472021107698016a436d430f</sys_scope>
+        <sys_update_name>sys_ui_view_e3889b947ce02110f1f4da0691347096</sys_update_name>
+        <title>Workspace Room Reservation System 0</title>
+        <user/>
+    </sys_ui_view>
+</record_update>
